@@ -3,13 +3,14 @@ package com.backend.Library.model;
 import com.backend.Library.enums.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
-
+@AllArgsConstructor
 public class User {
 
     @Id
