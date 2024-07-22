@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -17,5 +18,9 @@ public class BookServiceImpl implements IBookService {
     @Override
     public List<Book> findAllBooks() {
         return bookRepository.findAll();
+    }
+
+    public List<Book> findAllBooksByStatus(boolean bookStatus){
+        return bookRepository.findAllBooksByStatus(bookStatus);
     }
 }
