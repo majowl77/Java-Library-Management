@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class BookService implements IBookService {
+public class BookServiceImpl implements IBookService {
     private final BookRepository bookRepository;
 
     @Override
